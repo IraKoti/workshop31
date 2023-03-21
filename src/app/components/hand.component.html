@@ -1,0 +1,14 @@
+
+<div>
+    <p>hand works!</p>
+    <button type="button">Drop</button>
+</div>
+
+
+
+<table>
+    <tr *ngFor="let a of hand">
+        <td>{{a.name | titlecase}}</td>
+        <td *ngFor="let b of a.cards">{{b.value}} </td>
+    </tr>
+</table>
